@@ -11,7 +11,8 @@
 | 文档 | 简介 |
 |---|---|
 | [channel.md](./channel.md) | Channel 原理、阻塞语义、close 规则、与 Mutex/Atomic 的性能对比、20道高频面试题 |
-| [goroutine.md](./goroutine.md) | Goroutine 生命周期、GMP 调度模型、goroutine 与线程的区别 |
+| [goroutine.md](./goroutine.md) | Goroutine GMP 调度原理深度解析：G/M/P 数据结构、调度循环、Work Stealing、异步抢占、syscall 处理、栈管理、channel 交互、调优工具 |
+| [goroutine_scheduler.md](./goroutine_scheduler.md) | GMP 调度器图文速查：GPM 三层模型、队列、Work Stealing、Netpoller、抢占式调度、16道经典面试题 |
 | [如何防止goroutine泄漏.md](./如何防止goroutine泄漏.md) | 泄漏的常见原因、排查手段（pprof）、context + done channel 防泄漏模式 |
 | [Context.md](./Context.md) | context 四种创建方式、取消树传播原理、微服务调用链中的超时收缩模型、分布式 TraceID 传播 |
 | [defer.md](./defer.md) | defer LIFO 执行顺序、参数求值时机、性能开销与使用注意事项 |
